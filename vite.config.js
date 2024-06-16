@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/Soul-Scrolling-Site/',
+  base: '/Soul_Scrolling_Site/',
   optimizeDeps: {
     include: ['three'],
   },
