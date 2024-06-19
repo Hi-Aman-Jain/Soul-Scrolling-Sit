@@ -42,8 +42,8 @@ const rings = new THREE.Mesh(ringGeometry, ringMaterial);
 rings.rotation.x = 5.57; // Rotate the rings to be horizontal
 
 // Position Saturn and rings
-saturn.position.set(-25, 2, 85);
-rings.position.set(-25, 2, 85);
+saturn.position.set(-25, 1, 85);
+rings.position.set(-25, 1, 85);
 
 scene.add(saturn);
 scene.add(rings);
@@ -69,13 +69,13 @@ function addStar() {
 
   const [x, y, z] = Array(3)
     .fill()
-    .map(() => THREE.MathUtils.randFloatSpread(180));
+    .map(() => THREE.MathUtils.randFloatSpread(340));
 
   star.position.set(x, y, z);
   scene.add(star);
 }
 
-Array(2000).fill().forEach(addStar);
+Array(5200).fill().forEach(addStar);
 
 // Background
 const spaceTexture = new THREE.TextureLoader().load('Images/space.jpg');
@@ -105,14 +105,15 @@ box.position.x = 2.5;
 
 // Satellite (Box geometry)
 const satelliteGeometry = new THREE.BoxGeometry(2.5, 2.5, 5.5); 
-const satelliteMaterial = new THREE.MeshStandardMaterial({ color: 0xff2268 });
+const satelliteTexture = new THREE.TextureLoader().load('Images/satellite.jpg');
+const satelliteMaterial = new THREE.MeshBasicMaterial({ map: satelliteTexture });
 const satellite = new THREE.Mesh(satelliteGeometry, satelliteMaterial);
 
 scene.add(satellite);
-satellite.position.set(-15, 1, 50);
+satellite.position.set(-15, 0.6, 50);
 
 // Rocket (capsule geometry)
-const rocketGeometry = new THREE.CapsuleGeometry(5, 10, 30, 64);
+const rocketGeometry = new THREE.CapsuleGeometry(5, 11, 30, 64);
 const rocketMaterial = new THREE.MeshStandardMaterial({ color: 0xffeb89 });
 const rocket = new THREE.Mesh(rocketGeometry, rocketMaterial);
 
