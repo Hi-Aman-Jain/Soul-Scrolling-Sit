@@ -1,14 +1,14 @@
 {
   "homepage": "https://hi-aman-jain.github.io/Soul-Scrolling-Site/",
   "name": "scroll-site",
+  "private": true,
   "version": "1.0.0",
   "type": "module",
-  
-    "scripts": {
-      "dev": "vite",
-      "build": "vite build",
-      "deploy": "gh-pages -d dist"
-    },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "gh-pages -d dist -f"
+  },
   "devDependencies": {
     "gh-pages": "^6.1.1",
     "vite": "^5.2.0"
