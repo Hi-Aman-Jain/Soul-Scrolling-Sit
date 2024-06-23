@@ -97,20 +97,20 @@ const planet = new THREE.Mesh(
 );
 
 scene.add(planet);
-planet.position.z = 32;
+planet.position.z = 35;
 planet.position.x = -10;  // or planet.position.setX(-10);
 
 box.position.z = -5;
 box.position.x = 2.5;
 
 // Satellite (Box geometry)
-const satelliteGeometry = new THREE.BoxGeometry(2.5, 2.5, 5.5); 
+const satelliteGeometry = new THREE.BoxGeometry(3.5, 3.5, 6); 
 const satelliteTexture = new THREE.TextureLoader().load('Images/satellite.jpg');
 const satelliteMaterial = new THREE.MeshBasicMaterial({ map: satelliteTexture });
 const satellite = new THREE.Mesh(satelliteGeometry, satelliteMaterial);
 
 scene.add(satellite);
-satellite.position.set(-15, 0.6, 50);
+satellite.position.set(-15, 0.6, 59);
 
 // Rocket (capsule geometry)
 const rocketGeometry = new THREE.CapsuleGeometry(5, 11, 30, 64);
