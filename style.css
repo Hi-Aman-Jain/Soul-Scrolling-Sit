@@ -139,15 +139,14 @@ canvas {
   }
 
   .lastone {
-    font-size: 80px;
-    color: #03003e;
-    text-shadow: 5px 5px 6px rgb(48, 32, 77);
-    margin: 13% 0 3% 0;
+    font-size: 60px;
+    color: #270045;
+    text-shadow: 3px 3px 4px rgb(0, 50, 93);
+    margin: 16% 0 2% 0;
     padding: 0;
-    grid-column: 2 / span 9;
-    text-align: center;
+    grid-column: 3 / span 9;
     font-weight: bolder;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
   }
 
   button {
@@ -155,17 +154,17 @@ canvas {
     bottom: 20px;
     right: 20px;
     padding: 10px 15px;
-    font-size: 16px;
-    background-color: #540084;
+    font-size: 18px;
+    background-color: #500075e8;
     color: #fff;
     font-weight: bolder;
     border: none;
     border-radius: 7px;
     cursor: pointer;
-    z-index: 1000; /* Ensure it appears above the 3D scene */
+    z-index: 1000; 
     box-shadow: 7px 7px 5px #0a0a0a  ;
   }
   
   button:hover {
-    background-color: #1e0043;
+    background-color: #012a63e6;
   }
