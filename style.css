@@ -13,6 +13,7 @@ canvas {
   font-weight: 400;
   font-style: normal;
 }
+
 main {
   width: 100vw;
   color: #9c1f3d;
@@ -21,13 +22,12 @@ main {
   width: 100%;
   margin: 0px auto;
   padding: 120px 0px;
-  
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
-/* Prevent horizontal scrolling */
-html, body {
+html,
+body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -36,8 +36,9 @@ html, body {
   box-sizing: border-box;
 }
 
-/* Ensure all elements use border-box box-sizing */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -53,118 +54,144 @@ canvas {
   left: 0;
 }
 
+header {
+  background: #284f58c3;
+  grid-column: 2 / span 5;
+  padding: 2rem;
+  text-align: center;
+  margin: -5% 0 50% 0;
+  box-shadow: 16px 16px #cdf2fba4;
+}
+
+h5 {
+  font-size: 1.2rem;
+  color: rgba(248, 188, 203, 0.918);
+  font-family: cursive;
+  font-weight: bold;
+}
+
+h1 {
+  font-size:110px;
+  color: #bae5f9;
+  padding: 22px 0 27px 0;
+  text-shadow: 10px 10px 14px #031e24;
+}
+
+h3 {
+  font-size: 60px;
+  color: rgb(193, 255, 233);
+  padding-bottom: 30px;
+  text-shadow: 4px 4px rgb(0, 49, 32);
+}
+
+h4 {
+  font-size: 40px;
+  color: #ffffff;
+}
+
+h1,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+section {
+  grid-column: 2 / 8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+  border-left: 10px ridge #410124;
+}
+
+blockquote::before {
+  content: url('/Images/quoteup.png');
+  position: static;
+  margin: 0;
+  padding: 0;
+}
+
+blockquote::after {
+  content: url('/Images/quotedown.png');
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+blockquote p {
+  color: rgb(255, 156, 202);
+  box-shadow: 15px 15px 18px rgba(21, 0, 11, 0.717);
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
+  font-size: 38px;
+  line-height: 1.2;
+  font-family: cursive;
+  background: rgba(126, 0, 40, 0.47); 
+}
+
+.lastone {
+  grid-column: 3 / span 9;
+  font-size: 60px;
+  font-family: 'Moon Dance', cursive;
+  padding: 0;
+  font-weight: bold;
+  color: #cd3e00;
+  text-shadow: 3px 3px 4px rgb(230, 180, 0);
+  margin: 16% 0 2% 0;
+}
+
+#musicButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: #500075e8;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 100; 
+  box-shadow: 7px 7px 5px #000000  ;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
   header {
-    background: #284f58c3;
-    grid-column: 2 / span 5;
-    /* font-size: 2.8rem; */
-    padding: 2rem;
-    text-align: center;
-    margin: -5% 0 50% 0;
-    box-shadow: 16px 16px #cdf2fba4; ;
+    grid-column: 1 / span 12;
   }
-
-  h5 {
-    font-size: 1.2rem;
-    color: rgba(248, 188, 203, 0.918);
-    font-family:cursive;
-    font-weight:bold;
-  }
-
-  h1{
-    font-size:110px;
-    color: #bae5f9;
-    padding: 22px 0 27px 0;
-    /* background: #69113d3b; */
-    text-shadow:10px 10px 14px #031e24;
-  }
-
-  h3{
-    font-size: 60px;
-    color: rgb(193, 255, 233);
-    padding-bottom: 30px;
-    text-shadow:4px 4px rgb(0, 49, 32);
-  }
-
-  h4{
-    font-size: 40px;
-    color: #ffffff;
-  }
-
-  h1, h3, h4, h5 {
-    margin: 0;
-  } 
-
-  section {
-    grid-column: 2 / 8;
-    padding: 1rem;
-    background: var(--dark-bg);
-    font-size: 1.25rem;
-    line-height: 1.5;
-    margin-bottom: var(--spacing);
-  }
-
   blockquote {
-    margin: 0;
-    padding: 0;
-    grid-column: 2 / span 9;
-    margin-bottom: var(--spacing);
-    border-left: 10px ridge #410124;
+    grid-column: 1 / span 12;
   }
-
-  blockquote ::before {
-    content: url('/Images/quoteup.png');
-    position:static;
-    margin: 0;
-    padding: 0;
-  }
-
-  blockquote ::after {
-    content: url('/Images/quotedown.png');
-    position:relative;
-    margin: 0;
-    padding: 0;
-  }
-
   blockquote p {
-    color: rgb(255, 156, 202);
-    box-shadow: 8px 8px 14px rgba(21, 0, 11, 0.717);
-    text-shadow: 3px 3px 5px rgb(41, 0, 28) ;
-    font-size: 38px;
-    line-height: 1.2;
-    font-family: cursive;
+    font-size: 9vw;
   }
-
-  .left {
-    grid-column: 6 / 12;
-  }
-
   .lastone {
-    font-size: 60px;
-    color: #270045;
-    text-shadow: 3px 3px 4px rgb(0, 50, 93);
-    margin: 16% 0 2% 0;
-    padding: 0;
-    grid-column: 3 / span 9;
-    font-weight: bolder;
-    font-family:Arial, Helvetica, sans-serif;
+    grid-column: 1 / span 12;
   }
+}
 
-  button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 15px;
-    font-size: 18px;
-    background-color: #500075e8;
-    color: #fff;
-    font-weight: bolder;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    z-index: 1000; 
-    box-shadow: 7px 7px 5px #0a0a0a  ;
+@media (max-width: 480px) {
+  header {
+    grid-column: 1 / span 12;
   }
-  
-  button:hover {
-    background-color: #012a63e6;
+  blockquote {
+    grid-column: 1 / span 12;
   }
+  blockquote p {
+    font-size: 8vw;
+  }
+  .lastone {
+    grid-column: 1 / span 12;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+}
