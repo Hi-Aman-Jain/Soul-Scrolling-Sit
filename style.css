@@ -71,7 +71,7 @@ h5 {
 }
 
 h1 {
-  font-size:110px;
+  font-size: 110px;
   color: #bae5f9;
   padding: 22px 0 27px 0;
   text-shadow: 10px 10px 14px #031e24;
@@ -134,7 +134,7 @@ blockquote p {
   font-size: 38px;
   line-height: 1.2;
   font-family: cursive;
-  background: rgba(126, 0, 40, 0.47); 
+  background: rgba(126, 0, 40, 0.47);
 }
 
 .lastone {
@@ -158,8 +158,8 @@ blockquote p {
   color: #fff;
   border-radius: 10px;
   cursor: pointer;
-  z-index: 100; 
-  box-shadow: 7px 7px 5px #000000  ;
+  z-index: 100;
+  box-shadow: 7px 7px 5px #000000;
 }
 
 /* Media Queries for responsiveness */
@@ -167,12 +167,15 @@ blockquote p {
   header {
     grid-column: 1 / span 12;
   }
+
   blockquote {
     grid-column: 1 / span 12;
   }
+
   blockquote p {
     font-size: 9vw;
   }
+
   .lastone {
     grid-column: 1 / span 12;
   }
@@ -182,15 +185,19 @@ blockquote p {
   header {
     grid-column: 1 / span 12;
   }
+
   blockquote {
     grid-column: 1 / span 12;
   }
+
   blockquote p {
     font-size: 8vw;
   }
+
   .lastone {
     grid-column: 1 / span 12;
   }
+
   h5 {
     font-size: 1rem;
   }

@@ -35,7 +35,7 @@ const saturn = new THREE.Mesh(saturnGeometry, saturnMaterial);
 
 // Saturn Planet Ring
 const ringGeometry = new THREE.RingGeometry(8, 14, 32);
-const ringMaterial = new THREE.MeshBasicMaterial({map: ringTexture, side: THREE.DoubleSide });
+const ringMaterial = new THREE.MeshBasicMaterial({ map: ringTexture, side: THREE.DoubleSide });
 const rings = new THREE.Mesh(ringGeometry, ringMaterial);
 
 // Adjust ring orientation
@@ -80,7 +80,7 @@ Array(5200).fill().forEach(addStar);
 // Background
 const spaceTexture = new THREE.TextureLoader().load('Images/space.jpg');
 scene.background = spaceTexture;
- 
+
 // Avatar on the 3-D box
 const boxTexture = new THREE.TextureLoader().load('Images/box.jpg');
 const box = new THREE.Mesh(new THREE.BoxGeometry(3.2, 3.2, 3.2), new THREE.MeshBasicMaterial({ map: boxTexture }));
@@ -104,7 +104,7 @@ box.position.z = -5;
 box.position.x = 2.5;
 
 // Satellite (Box geometry)
-const satelliteGeometry = new THREE.BoxGeometry(3.5, 3.5, 6); 
+const satelliteGeometry = new THREE.BoxGeometry(3.5, 3.5, 6);
 const satelliteTexture = new THREE.TextureLoader().load('Images/satellite.jpg');
 const satelliteMaterial = new THREE.MeshBasicMaterial({ map: satelliteTexture });
 const satellite = new THREE.Mesh(satelliteGeometry, satelliteMaterial);
@@ -201,11 +201,11 @@ musicButton.addEventListener('click', () => {
 // let isScrolling;
 // window.addEventListener('scroll', () => {
 //   backgroundMusic.play(); 
-  // Start playing music when scrolling
-  //clearTimeout(isScrolling);
-  //isScrolling = setTimeout(() => {
-   // backgroundMusic.pause(); 
-    // Pause music when scrolling stops
-  //}, 66); 
-  // 66ms for smooth user experience
+// Start playing music when scrolling
+//clearTimeout(isScrolling);
+//isScrolling = setTimeout(() => {
+// backgroundMusic.pause();
+// Pause music when scrolling stops
+//}, 66);
+// 66ms for smooth user experience
 // });
