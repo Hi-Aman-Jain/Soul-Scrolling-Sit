@@ -56,14 +56,12 @@ Feel free to modify the 3D elements, textures, colors, or quotes to suit your pr
 
 Contributions, issues, and feature requests are welcome. Feel free to check [issues page](link-to-your-issues-page) if you want to contribute.
 
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+### P.S - Those lines are written by me 😊
 
 ## Screenshot 
 
-![Screenshot](ss1.png)
-![Screenshot](ss2.png)
-![Screenshot](ss3.png)
+![Screenshot](/Images/ss1.png)
+![Screenshot](/Images/ss2.png)
+![Screenshot](/Images/ss3.png)
 
 ---
